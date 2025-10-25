@@ -7,37 +7,19 @@ int main(){
     double num2;
     double result;
 
-    printf("\nEnter an operator (+ - * /): ");
-    scanf("%c", &operator);
+    enum num1;
+    enum num2;
+    enum num3;
 
-    printf("Enter number 1: ");
-    scanf("%1f", &num1);
-
-    printf("Enter number 2: ");
-    scanf("%1f", &num2);
-
-    switch(operator){
-       case '+':
-          result = num1 + num2;
-          printf("\nresult: %1f", result);
-          break;
-        case '-':
-           result = num1 - num2;
-           printf("\nresult: %1f", result);
-           break;
-        case '*':
-           result = num1 * num2;
-           printf("\nresult: %1f", result);
-           break;
-        
-        case '/':
-           result = num1 / num2;
-           printf("\nresult: %1f", result);
-           break;
-
-       default:
-          printf("%c is not valid", operator);
-    }
+    scanf("operator, &operator");
+    printf("\nEnter an operator: %d\n", operator);
+    
+    scanf("num1, &num1");
+    printf("Enter number 1: %d\n", 1);
+    
+    scanf("num1, &num2");
+    printf("Enter number: %d\n", 2);
 
     return 0;
+
 }
